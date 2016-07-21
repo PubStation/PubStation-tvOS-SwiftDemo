@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D97D8F71D40D728006FDA8B /* libPubStationSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D97D8EA1D40D728006FDA8B /* libPubStationSDK.a */; };
+		3DD920ED1D40EB5A00561C37 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3DD920EC1D40EB5A00561C37 /* README.md */; };
 		532483C31CF2B76700F33619 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532483C21CF2B76700F33619 /* Constant.swift */; };
 		5394C6031CEECC9500EF00ED /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5394C6021CEECC9500EF00ED /* TableViewCell.swift */; };
 		5394C6091CEEDFD100EF00ED /* ManualFetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5394C6081CEEDFD100EF00ED /* ManualFetchViewController.swift */; };
@@ -37,6 +38,7 @@
 		3D97D8F41D40D728006FDA8B /* PubStation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PubStation-Bridging-Header.h"; sourceTree = "<group>"; };
 		3D97D8F51D40D728006FDA8B /* PubStationSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubStationSDK.h; sourceTree = "<group>"; };
 		3D97D8F61D40D728006FDA8B /* PubStationSDKSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubStationSDKSettings.h; sourceTree = "<group>"; };
+		3DD920EC1D40EB5A00561C37 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		532483C21CF2B76700F33619 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		5394C6021CEECC9500EF00ED /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5394C6081CEEDFD100EF00ED /* ManualFetchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualFetchViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		53C4B42C1CEC8B1A004ABDB9 = {
 			isa = PBXGroup;
 			children = (
+				3DD920EC1D40EB5A00561C37 /* README.md */,
 				3D97D8E91D40D728006FDA8B /* PubStationSDK */,
 				53C4B4371CEC8B1A004ABDB9 /* PubStation-SwiftDemo */,
 				53C4B4361CEC8B1A004ABDB9 /* Products */,
@@ -185,7 +188,7 @@
 				53C4B43F1CEC8B1A004ABDB9 /* Assets.xcassets */,
 				53C4B4411CEC8B1A004ABDB9 /* Info.plist */,
 			);
-			path = PubStation-SwiftDemo;
+			path = "PubStation-SwiftDemo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +207,7 @@
 			dependencies = (
 			);
 			name = "PubStation-SwiftDemo";
-			productName = PubStation-SwiftDemo;
+			productName = "PubStation-SwiftDemo";
 			productReference = 53C4B4351CEC8B1A004ABDB9 /* PubStation-SwiftDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -264,6 +267,7 @@
 				532483C31CF2B76700F33619 /* Constant.swift in Sources */,
 				5394C6131CEEE1EE00EF00ED /* StoryBoardExtension.swift in Sources */,
 				5394C60F1CEEE03B00EF00ED /* ViewControllerExtension.swift in Sources */,
+				3DD920ED1D40EB5A00561C37 /* README.md in Sources */,
 				5394C60B1CEEDFDC00EF00ED /* AutoFetchViewController.swift in Sources */,
 				53C4B43B1CEC8B1A004ABDB9 /* ViewController.swift in Sources */,
 				53C4B4391CEC8B1A004ABDB9 /* AppDelegate.swift in Sources */,
@@ -376,7 +380,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
-				INFOPLIST_FILE = PubStation-SwiftDemo/Info.plist;
+				INFOPLIST_FILE = "PubStation-SwiftDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
@@ -397,7 +401,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
-				INFOPLIST_FILE = PubStation-SwiftDemo/Info.plist;
+				INFOPLIST_FILE = "PubStation-SwiftDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
