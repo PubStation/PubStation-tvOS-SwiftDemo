@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="q0m-ht-yfz">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="s2P-yN-fQa">
+            <objects>
+                <navigationController id="q0m-ht-yfz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rlZ-sE-1uZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pV4-Nu-Iyi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDC-WI-nl5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1912" y="841"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PubStation_SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PubStation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5A-Te-zIO">
+                                <rect key="frame" x="609" y="48" width="702" height="101"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.58431372550000005" green="0.58431372550000005" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="bJl-yv-wyM">
+                                <rect key="frame" x="0.0" y="157" width="1920" height="576"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="140" id="uhS-mY-hkD" customClass="TableViewCell" customModule="PubStation_SwiftDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="15" width="1920" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uhS-mY-hkD" id="GkQ-xg-YBT">
+                                            <rect key="frame" x="0.0" y="0.0" width="1904" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSf-Jf-Upu">
+                                                    <rect key="frame" x="69" y="20" width="1782" height="100"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.48946896114864863" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="vSf-Jf-Upu" id="iyQ-lC-gna"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="QbP-zS-Rbe"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="pIe-Um-RmY"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukt-hV-BpY">
+                                <rect key="frame" x="1043" y="843" width="827" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="827" id="ttc-DZ-abO"/>
+                                    <constraint firstAttribute="height" constant="87" id="tyY-5b-squ"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="App Tracking"/>
+                                <connections>
+                                    <action selector="eventTrackingClicked:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="dIw-iQ-Iag"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAz-IG-JPu">
+                                <rect key="frame" x="1773" y="860" width="79" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="274-0Y-Utx"/>
+                                    <constraint firstAttribute="width" constant="79" id="qHC-b4-JfQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.48946896109999999" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoW-nr-shV">
+                                <rect key="frame" x="50" y="843" width="827" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="827" id="Oy7-Cv-Ciw"/>
+                                    <constraint firstAttribute="height" constant="87" id="diJ-AI-Mfh"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Enable Logs"/>
+                                <connections>
+                                    <action selector="enableLogsClicked:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="lLz-se-4ca"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLU-Pr-9aK">
+                                <rect key="frame" x="780" y="861" width="79" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="BAx-wQ-pNi"/>
+                                    <constraint firstAttribute="width" constant="79" id="zUZ-tZ-Qfe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.48946896109999999" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HoW-nr-shV" secondAttribute="bottom" constant="150" id="QqU-HY-MPS"/>
+                            <constraint firstItem="HoW-nr-shV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="ReA-kO-tNh"/>
+                            <constraint firstItem="WLU-Pr-9aK" firstAttribute="centerY" secondItem="HoW-nr-shV" secondAttribute="centerY" id="TbM-un-Ru8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ukt-hV-BpY" secondAttribute="bottom" constant="150" id="ZVL-RN-5q3"/>
+                            <constraint firstItem="ZAz-IG-JPu" firstAttribute="centerY" secondItem="ukt-hV-BpY" secondAttribute="centerY" id="hsN-vF-wgK"/>
+                            <constraint firstAttribute="trailing" secondItem="ukt-hV-BpY" secondAttribute="trailing" constant="50" id="joG-5K-3ks"/>
+                            <constraint firstItem="WLU-Pr-9aK" firstAttribute="trailing" secondItem="HoW-nr-shV" secondAttribute="trailing" constant="-18" id="kKo-I3-dTp"/>
+                            <constraint firstItem="ZAz-IG-JPu" firstAttribute="trailing" secondItem="ukt-hV-BpY" secondAttribute="trailing" constant="-18" id="oHN-l9-SCl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OXm-ba-Dbk"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="enableLogsStatusLabel" destination="WLU-Pr-9aK" id="HfD-u7-EmC"/>
+                        <outlet property="eventTrackingStatusLabel" destination="ZAz-IG-JPu" id="Wnb-8O-uox"/>
+                        <outlet property="tableView" destination="bJl-yv-wyM" id="Ql5-9v-pcq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="841"/>
+        </scene>
+        <!--Auto Fetch View Controller-->
+        <scene sceneID="sPj-7I-0vX">
+            <objects>
+                <viewController storyboardIdentifier="AutoFetchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WRh-CC-GzK" customClass="AutoFetchViewController" customModule="PubStation_SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0k1-Yv-rO4"/>
+                        <viewControllerLayoutGuide type="bottom" id="R1r-ia-Gun"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HyB-sv-zVC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nb-R4-4dx">
+                                <rect key="frame" x="846" y="497" width="231" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Show Ad"/>
+                                <connections>
+                                    <action selector="showAdClicked:" destination="WRh-CC-GzK" eventType="primaryActionTriggered" id="NtJ-lC-z6t"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPY-c3-t3A">
+                                <rect key="frame" x="221" y="224" width="1530" height="201"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="44"/>
+                                <color key="textColor" red="0.00017755681820000001" green="9.4959597270000002e-05" blue="0.0001121412196" alpha="0.48946896109999999" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="adInfoLabel" destination="cPY-c3-t3A" id="CKx-Wa-J6g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGe-2L-nJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2384" y="-367"/>
+        </scene>
+        <!--Manual Fetch View Controller-->
+        <scene sceneID="FDe-wE-jRj">
+            <objects>
+                <viewController storyboardIdentifier="ManualFetchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qLV-2p-OiO" customClass="ManualFetchViewController" customModule="PubStation_SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QqG-vS-ruF"/>
+                        <viewControllerLayoutGuide type="bottom" id="qdD-se-1j4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z9Z-mE-96W">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hug-lI-dp8">
+                                <rect key="frame" x="451" y="530" width="262" height="117"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Fetch Ad"/>
+                                <connections>
+                                    <action selector="fetchAdClicked:" destination="qLV-2p-OiO" eventType="primaryActionTriggered" id="d6G-Py-swk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click on Fetch Ad" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YZ-2P-fC8">
+                                <rect key="frame" x="260" y="59" width="1400" height="258"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.00017755681820000001" green="9.4959597270000002e-05" blue="0.0001121412196" alpha="0.48946896109999999" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naz-iU-QTt">
+                                <rect key="frame" x="1260" y="530" width="262" height="117"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Show Ad"/>
+                                <connections>
+                                    <action selector="showAdClicked:" destination="qLV-2p-OiO" eventType="primaryActionTriggered" id="hlA-uS-UfQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="adInfoLabel" destination="5YZ-2P-fC8" id="J8d-go-kBF"/>
+                        <outlet property="fetchAdButton" destination="hug-lI-dp8" id="hta-eb-zeX"/>
+                        <outlet property="showAdButton" destination="naz-iU-QTt" id="0IZ-dV-ywf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1x-6M-TX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2384" y="841"/>
+        </scene>
+        <!--App Tracking View Controller-->
+        <scene sceneID="eVZ-cV-cQ5">
+            <objects>
+                <viewController storyboardIdentifier="AppTrackingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r1t-h8-cUJ" customClass="AppTrackingViewController" customModule="PubStation_SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u2U-cI-bK7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xf0-Iz-dNZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kp7-nH-MS9">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="40" sectionFooterHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="N4C-X5-UEy">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="744"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AppTrackTableViewCell" rowHeight="150" id="4Wj-hl-eTf" customClass="AppTrackTableViewCell" customModule="PubStation_SwiftDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="54" width="1920" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Wj-hl-eTf" id="w2g-PZ-fMN">
+                                            <rect key="frame" x="0.0" y="0.0" width="1904" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spt-vS-jau">
+                                                    <rect key="frame" x="240" y="20" width="1424" height="58"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click to track this event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51m-t4-fcQ">
+                                                    <rect key="frame" x="240" y="86" width="1424" height="45"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="31"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="subTitleLabel" destination="51m-t4-fcQ" id="3qb-B6-8EW"/>
+                                            <outlet property="titleLabel" destination="Spt-vS-jau" id="6eK-dn-8Nm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="r1t-h8-cUJ" id="yIm-Hn-KoZ"/>
+                                    <outlet property="delegate" destination="r1t-h8-cUJ" id="4ET-6F-dse"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tcM-Th-Exl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2384" y="2062"/>
+        </scene>
+    </scenes>
+</document>
