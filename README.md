@@ -10,12 +10,33 @@ case we recommend you to follow the steps in the README file of the PubStation S
 
 https://github.com/PubStation/PubStation-tvOS-SDK
 
+
 Download
 --------
 
 The latest version of the PubStation Swift Demo can be always found at
 
 https://github.com/PubStation/PubStation-tvOS-SwiftDemo.
+
+
+Features
+--------
+
+The demo app is in particular interesting for you if you want to learn
+
+* How to use the SDK with **manual ad fetching** (default behaviour is automatic fetching of video ads).
+
+* How to use the **delegate objects** to get informed about
+
+   - events during the ad fetching process
+
+   - events during the ad playing process.
+
+* How to submit information about the user and the app (**this will lead to better targeting of advertising to your
+  app users - which means more money for you!**).
+
+* How to use the SDK to **track custom app events**.
+
 
 Getting started
 ---------------
