@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D97D8F71D40D728006FDA8B /* libPubStationSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D97D8EA1D40D728006FDA8B /* libPubStationSDK.a */; };
+		3D61EE301D6B14F300DD7337 /* libPubStationSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D61EE231D6B14F300DD7337 /* libPubStationSDK.a */; };
 		3DD920ED1D40EB5A00561C37 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3DD920EC1D40EB5A00561C37 /* README.md */; };
 		532483C31CF2B76700F33619 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532483C21CF2B76700F33619 /* Constant.swift */; };
 		5394C6031CEECC9500EF00ED /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5394C6021CEECC9500EF00ED /* TableViewCell.swift */; };
@@ -25,19 +25,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D97D8EA1D40D728006FDA8B /* libPubStationSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPubStationSDK.a; sourceTree = "<group>"; };
-		3D97D8EB1D40D728006FDA8B /* PSApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSApp.h; sourceTree = "<group>"; };
-		3D97D8EC1D40D728006FDA8B /* PSConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSConstant.h; sourceTree = "<group>"; };
-		3D97D8ED1D40D728006FDA8B /* PSEventTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSEventTracker.h; sourceTree = "<group>"; };
-		3D97D8EE1D40D728006FDA8B /* PSInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSInterstitialAd.h; sourceTree = "<group>"; };
-		3D97D8EF1D40D728006FDA8B /* PSInterstitialAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSInterstitialAdManager.h; sourceTree = "<group>"; };
-		3D97D8F01D40D728006FDA8B /* PSLoadAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLoadAdDelegate.h; sourceTree = "<group>"; };
-		3D97D8F11D40D728006FDA8B /* PSPlayAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPlayAdDelegate.h; sourceTree = "<group>"; };
-		3D97D8F21D40D728006FDA8B /* PSRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRequestDelegate.h; sourceTree = "<group>"; };
-		3D97D8F31D40D728006FDA8B /* PSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSUser.h; sourceTree = "<group>"; };
-		3D97D8F41D40D728006FDA8B /* PubStation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PubStation-Bridging-Header.h"; sourceTree = "<group>"; };
-		3D97D8F51D40D728006FDA8B /* PubStationSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubStationSDK.h; sourceTree = "<group>"; };
-		3D97D8F61D40D728006FDA8B /* PubStationSDKSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubStationSDKSettings.h; sourceTree = "<group>"; };
+		3D61EE231D6B14F300DD7337 /* libPubStationSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPubStationSDK.a; sourceTree = "<group>"; };
+		3D61EE241D6B14F300DD7337 /* PSApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSApp.h; sourceTree = "<group>"; };
+		3D61EE251D6B14F300DD7337 /* PSConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSConstant.h; sourceTree = "<group>"; };
+		3D61EE261D6B14F300DD7337 /* PSEventTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSEventTracker.h; sourceTree = "<group>"; };
+		3D61EE271D6B14F300DD7337 /* PSInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSInterstitialAd.h; sourceTree = "<group>"; };
+		3D61EE281D6B14F300DD7337 /* PSInterstitialAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSInterstitialAdManager.h; sourceTree = "<group>"; };
+		3D61EE291D6B14F300DD7337 /* PSLoadAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLoadAdDelegate.h; sourceTree = "<group>"; };
+		3D61EE2A1D6B14F300DD7337 /* PSPlayAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPlayAdDelegate.h; sourceTree = "<group>"; };
+		3D61EE2B1D6B14F300DD7337 /* PSRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRequestDelegate.h; sourceTree = "<group>"; };
+		3D61EE2C1D6B14F300DD7337 /* PSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSUser.h; sourceTree = "<group>"; };
+		3D61EE2D1D6B14F300DD7337 /* PubStation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PubStation-Bridging-Header.h"; sourceTree = "<group>"; };
+		3D61EE2E1D6B14F300DD7337 /* PubStationSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubStationSDK.h; sourceTree = "<group>"; };
+		3D61EE2F1D6B14F300DD7337 /* PubStationSDKSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubStationSDKSettings.h; sourceTree = "<group>"; };
 		3DD920EC1D40EB5A00561C37 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		532483C21CF2B76700F33619 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		5394C6021CEECC9500EF00ED /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -61,29 +61,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D97D8F71D40D728006FDA8B /* libPubStationSDK.a in Frameworks */,
+				3D61EE301D6B14F300DD7337 /* libPubStationSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D97D8E91D40D728006FDA8B /* PubStationSDK */ = {
+		3D61EE221D6B14F300DD7337 /* PubStationSDK */ = {
 			isa = PBXGroup;
 			children = (
-				3D97D8EA1D40D728006FDA8B /* libPubStationSDK.a */,
-				3D97D8EB1D40D728006FDA8B /* PSApp.h */,
-				3D97D8EC1D40D728006FDA8B /* PSConstant.h */,
-				3D97D8ED1D40D728006FDA8B /* PSEventTracker.h */,
-				3D97D8EE1D40D728006FDA8B /* PSInterstitialAd.h */,
-				3D97D8EF1D40D728006FDA8B /* PSInterstitialAdManager.h */,
-				3D97D8F01D40D728006FDA8B /* PSLoadAdDelegate.h */,
-				3D97D8F11D40D728006FDA8B /* PSPlayAdDelegate.h */,
-				3D97D8F21D40D728006FDA8B /* PSRequestDelegate.h */,
-				3D97D8F31D40D728006FDA8B /* PSUser.h */,
-				3D97D8F41D40D728006FDA8B /* PubStation-Bridging-Header.h */,
-				3D97D8F51D40D728006FDA8B /* PubStationSDK.h */,
-				3D97D8F61D40D728006FDA8B /* PubStationSDKSettings.h */,
+				3D61EE231D6B14F300DD7337 /* libPubStationSDK.a */,
+				3D61EE241D6B14F300DD7337 /* PSApp.h */,
+				3D61EE251D6B14F300DD7337 /* PSConstant.h */,
+				3D61EE261D6B14F300DD7337 /* PSEventTracker.h */,
+				3D61EE271D6B14F300DD7337 /* PSInterstitialAd.h */,
+				3D61EE281D6B14F300DD7337 /* PSInterstitialAdManager.h */,
+				3D61EE291D6B14F300DD7337 /* PSLoadAdDelegate.h */,
+				3D61EE2A1D6B14F300DD7337 /* PSPlayAdDelegate.h */,
+				3D61EE2B1D6B14F300DD7337 /* PSRequestDelegate.h */,
+				3D61EE2C1D6B14F300DD7337 /* PSUser.h */,
+				3D61EE2D1D6B14F300DD7337 /* PubStation-Bridging-Header.h */,
+				3D61EE2E1D6B14F300DD7337 /* PubStationSDK.h */,
+				3D61EE2F1D6B14F300DD7337 /* PubStationSDKSettings.h */,
 			);
 			path = PubStationSDK;
 			sourceTree = "<group>";
@@ -159,8 +159,8 @@
 		53C4B42C1CEC8B1A004ABDB9 = {
 			isa = PBXGroup;
 			children = (
+				3D61EE221D6B14F300DD7337 /* PubStationSDK */,
 				3DD920EC1D40EB5A00561C37 /* README.md */,
-				3D97D8E91D40D728006FDA8B /* PubStationSDK */,
 				53C4B4371CEC8B1A004ABDB9 /* PubStation-SwiftDemo */,
 				53C4B4361CEC8B1A004ABDB9 /* Products */,
 			);
